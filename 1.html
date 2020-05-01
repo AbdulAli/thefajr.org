@@ -45,7 +45,7 @@
 
       <div class="logo mr-auto">
 	    <link href="assets/img/favicon.png" rel="icon">
-       <h2><img src="assets/img/favicon.png" alt="logo" /><class="text" ><span><strong> The Fajr Islamic Center</strong></span></h2>
+       <h4><img src="assets/img/favicon.png" alt="logo" /><class="text" ><span><strong> The Fajr Islamic Center</strong></span></h4>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -86,7 +86,7 @@
 <p></p><p></p>
         <p align="left"><h2><strong>Calculate your Zakat</strong></h2></p>
 		<p>Zakāt is an obligation payable annually according to the islamic lunar calendar. Zakāt purifies, cleanses, and protects oneself and their wealth. It also helps those who are poor and in need.</p>
-		<h2><p>Enter the total value of your assets and expenses in the fields below, and our calculator will automatically calculate how much Zakat you owe this year.</p></h2>
+		<h3><p>Enter the total value of your assets and expenses in the fields below, and our calculator will automatically calculate how much Zakat you owe this year.</p></h3>
 
         <div class='calculator-main'>
           <form id='form-calculator' name='form-calculator' method='post'>
@@ -285,7 +285,7 @@
                 </tr>
                 <tr>
                   <td class='lbl'>
-                    <div class='lbl'>Nisab threshold (87.48 grams of Gold)</div>
+                    <div class='lbl'>Nisab threshold (612.36 grams of silver)</div>
                     <div class='desc'>Last updated on April 21, 2020</div>
                   </td>
                   <td class='inp'>
@@ -388,12 +388,12 @@
             var assets_total = jQuery('#assets_total').val() != '' ? jQuery('#assets_total').val() : 0;
             var liabilities_total = jQuery('#liabilities_total').val() != '' ? jQuery('#liabilities_total').val() : 0;
             var net_zakatable_assets = (assets_total - liabilities_total).toFixed(2);
-            var nisab_threshold = (87.48 * goldPrice).toFixed(2);
+            var nisab_threshold = (612.36 * silverPrice).toFixed(2);
             var zakat_payment = net_zakatable_assets - nisab_threshold;
             if (zakat_payment < 0) {
               zakat_payment = 0;
             } else {
-              zakat_payment = net_zakatable_assets * 0.0257;
+              zakat_payment = net_zakatable_assets * 0.025;
             }
             jQuery('#net_zakatable_assets').val(net_zakatable_assets);
             jQuery('#nisab_threshold').val(nisab_threshold);
