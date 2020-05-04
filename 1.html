@@ -69,8 +69,10 @@
 <p></p>
 
  <section id="pricing" class="pricing">
-      <div class="container">
-      <div class="section-title" data-aos="fade-up">
+<div class="container" style="
+    width: 928px;
+">
+      <div class="section-title aos-init aos-animate" data-aos="fade-up">
         <h2>Zakat Calculator</h2>
       </div>
 	  <div class="alert alert-warning">
@@ -82,237 +84,239 @@
 	  </div>
 
       <div class="row">
-      <div class="">
-      <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+     <div class="box recommended aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100" style="
+    width: 942px;
+">
 <p></p><p></p>
-        <p align="left"><h2><strong>Calculate your Zakat</strong></h2></p>
+        <p align="left"></p><h2><strong>Calculate your Zakat</strong></h2><p></p>
 		<p>Zakāt is an obligation payable annually according to the islamic lunar calendar. Zakāt purifies, cleanses, and protects oneself and their wealth. It also helps those who are poor and in need.</p>
 		<h3><p>Enter the total value of your assets and expenses in the fields below, and our calculator will automatically calculate how much Zakat you owe this year.</p></h3>
 
-        <div class='calculator-main'>
-          <form id='form-calculator' name='form-calculator' method='post'>
+
+        <div class="calculator-group">
+          <form id="form-calculator" name="form-calculator" method="post">
             <h3>Assets (Annual)</h3>
-            <div id='calculator-assets' class='calculator-group'>
-              <table border=0 cellpadding=5 cellspacing=0>
-                <tr>
-                  <td class='lbl'>
-                    <div class='lbl'><p align="left">
-					  <h5>
-						<strong>Cash (Home/Bank/Other)</strong></p></div>
-					  </h5>
-                    <div class='desc'><p align="left">Cash assets include all money in your bank account(s), at home, etc.</p></div>
+            <div id="calculator-assets" class="calculator-group">
+              <table border="0" cellpadding="5" cellspacing="0">
+                <tbody><tr>
+                  <td class="lbl">
+                    <div class="lbl"><p align="left">
+					  </p><h5>
+						<strong>Cash (Home/Bank/Other)</strong><p></p></h5></div>
+					  
+                    <div class="desc"><p align="left">Cash assets include all money in your bank account(s), at home, etc.</p></div>
                   </td>
-                  <td class='inp'>
-						<input id="cash" class="form-control" style="width: 320px;height: 61px;" name="cash" type="text" placeholder="Value (CAD)"> 
+                  <td class="inp">
+						<input id="cash" class="form-control" style="width: 320px;height: 41px;height: 41px;" name="cash" type="text" placeholder="Value (CAD)"> 
      				</td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'><p align="left">
-					  <h5>
-						<strong>Gold</strong></p></div>
-					  </h5>
-                    <div class='desc'><p align="left">Enter either the number of grams or the cash value of your Gold</p></div>
+                  <td class="lbl">
+                    <div class="lbl"><p align="left">
+					  </p><h5>
+						<strong>Gold</strong><p></p></h5></div>
+					  
+                    <div class="desc"><p align="left">Enter either the number of grams or the cash value of your Gold</p></div>
                   </td>
 
-                  <td class='inp'>
-                    <input id="gold_grams" style="width: 320px;" name="gold_grams" type="text" placeholder=" Amount (g)">
+                  <td class="inp">
+					<input id="gold_grams" style="width: 320px;height: 41px;height: 41px;" name="gold_grams" type="text" placeholder=" Amount (g)">
                     <br>
-					<input id="gold_dollars" style="width: 320px;" name="gold_dollars" type="text" placeholder=" Value (CAD)">
+					<input id="gold_dollars" style="width: 320px;height: 41px;" name="gold_dollars" type="text" placeholder=" Value (CAD)">
                     <br>
-                    <input id='gold' class='form-control readonly' style='width: 320px;' name='cash' type='text' placeholder='Value (CAD)' readonly='readonly' > 
+                    <input id="gold" class="form-control readonly" style="width: 320px;height: 41px;" name="cash" type="text" placeholder="Value (CAD)" readonly="readonly"> 
                   </td>
                 </tr>
          
 				<tr>
-                  <td class='lbl'>
-                    <div class='lbl'><p align="left">
-					  <h5>
-						<strong>Silver</strong></p></div>
-					  </h5>
-                    <div class='desc'><p align="left">Enter either the number of grams or the cash value of your Silver</p></div>
+                  <td class="lbl">
+                    <div class="lbl"><p align="left">
+					  </p><h5>
+						<strong>Silver</strong><p></p></h5></div>
+					  
+                    <div class="desc"><p align="left">Enter either the number of grams or the cash value of your Silver</p></div>
                   </td>
-				  <td class='inp'>
-                    <input id='silver_grams' style='width: 320px;' name='silver_grams' type='text' placeholder='Amount (g)'>
+				  <td class="inp">
+                    <input id="silver_grams" style="width: 320px;height: 41px;" name="silver_grams" type="text" placeholder="Amount (g)">
                     <br>
-                    <input id='silver_dollars' style='width: 320px;' name='silver_dollars' type='text' placeholder='Value (CAD)'>
+                    <input id="silver_dollars" style="width: 320px;height: 41px;" name="silver_dollars" type="text" placeholder="Value (CAD)">
                     <br>
-                    <input id='silver' class='form-control readonly' style='width: 320px;' name='cash' type='text' placeholder='Value (CAD)' readonly='readonly'>
+                    <input id="silver" class="form-control readonly" style="width: 320px;height: 41px;" name="cash" type="text" placeholder="Value (CAD)" readonly="readonly">
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'><p align="left">
-					  <h5>
-					    <strong>Shares</strong></p></div>
-					  </h5>
-                    <div class='desc'><p align="left">If they are for long-term investment without intention to resell then only list the dividend income. 
+                  <td class="lbl">
+                    <div class="lbl"><p align="left">
+					  </p><h5>
+					    <strong>Shares</strong><p></p></h5></div>
+					  
+                    <div class="desc"><p align="left">If they are for long-term investment without intention to resell then only list the dividend income. 
 					If they are for capital appreciation and with the intention to resell, then please include their market value instead.</p></div>
                   </td>
-                  <td class='inp'>
-                    <input id='shares' class='form-control' style='width: 320px;' name='shares' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="shares" class="form-control" style="width: 320px;height: 41px;" name="shares" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'><p align="left">
-					  <h5>
-						<strong>RRSP/RESP</strong></p></div>
-					  </h5>
-                    <div class='desc'><p align="left">List value after deductions are calculated.</p></div>
+                  <td class="lbl">
+                    <div class="lbl"><p align="left">
+					  </p><h5>
+						<strong>RRSP/RESP</strong><p></p></h5></div>
+					  
+                    <div class="desc"><p align="left">List value after deductions are calculated.</p></div>
                   </td>
-                  <td class='inp'>
-                    <input id='rrsp_resp' class='form-control' style='width: 320px;' name='rrsp_resp' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="rrsp_resp" class="form-control" style="width: 320px;height: 41px;" name="rrsp_resp" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'><p align="left">
-					  <h5>
-						<strong>Investment Properties</strong></p></div>
-					  </h5>
-                    <div class='desc'><p align="left">For property other than your home for long-term investment without intention to resell – Zakat is due on rental income only. For property 
+                  <td class="lbl">
+                    <div class="lbl"><p align="left">
+					  </p><h5>
+						<strong>Investment Properties</strong><p></p></h5></div>
+					  
+                    <div class="desc"><p align="left">For property other than your home for long-term investment without intention to resell – Zakat is due on rental income only. For property 
 					with the prime motivation of capital appreciation and with the intention to resell in this Zakat year, then please include the value of the property.</p></div>
                   </td>
-                  <td class='inp'>
-                    <input id='investment_properties' class='form-control' style='width: 320px;' name='investment_properties' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="investment_properties" class="form-control" style="width: 320px;height: 41px;" name="investment_properties" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'><p align="left">
-					  <h5>
-						<strong>Debts on Others</strong></p></div>
-					  </h5>
-                    <div class='desc'><p align="left">Amounts lended to others</p></div>
+                  <td class="lbl">
+                    <div class="lbl"><p align="left">
+					  </p><h5>
+						<strong>Debts on Others</strong><p></p></h5></div>
+					  
+                    <div class="desc"><p align="left">Amounts lended to others</p></div>
                   </td>
 				  				  
-                  <td class='inp'>
-                    <input id='debts_on_others' class='form-control' style='width: 320px;' name='debts_on_others' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="debts_on_others" class="form-control" style="width: 320px;height: 41px;" name="debts_on_others" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'><p align="left">
-					  <h5>
-						<strong>Anything else</strong></p></div>
-					  </h5>
+                  <td class="lbl">
+                    <div class="lbl"><p align="left">
+					  </p><h5>
+						<strong>Anything else</strong><p></p></h5></div>
+					  
                   </td>
-                  <td class='inp'>
-                    <input id='anything_else' class='form-control' style='width: 320px;' name='anything_else' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="anything_else" class="form-control" style="width: 320px;height: 41px;" name="anything_else" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'><p align="left">
-					  <h5>
-						<strong>Total</strong></p></div>
-					  </h5>
+                  <td class="lbl">
+                    <div class="lbl"><p align="left">
+					  </p><h5>
+						<strong>Total</strong><p></p></h5></div>
+					  
                   </td>
-                  <td class='inp'>
-                    <input id='assets_total' style='width: 320px;' name='assets_total' class='readonly' readonly='readonly' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="assets_total" style="width: 320px;height: 41px;" name="assets_total" class="readonly" readonly="readonly" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
-              </table>
+              </tbody></table>
             </div>
-            <hr />
+            <hr>
 
             <h3>Liabilities (Annual)</h3>
-            <div id='calculator-liabilities' class='calculator-group'>
-              <table border=0 cellpadding=5 cellspacing=0>
-                <tr>
-                  <td class='lbl'>
-                    <div class='lbl'>Rent or mortgage payments</div>
+            <div id="calculator-liabilities" class="calculator-group">
+              <table border="0" cellpadding="5" cellspacing="0">
+                <tbody><tr>
+                  <td class="lbl">
+                    <div class="lbl">Rent or mortgage payments</div>
                   </td>
-                  <td class='inp'>
-                    <input id='rent_mortgag_payment' class='form-control' style='width: 320px;' name='rent_mortgag_payment' type='text' placeholder='Value (CAD)'> 
-                  </td>
-                </tr>
-                <tr>
-                  <td class='lbl'>
-                    <div class='lbl'>Personal and living expenses</div>
-                  </td>
-                  <td class='inp'>
-                    <input id='personal_living_expenses' class='form-control' style='width: 320px;' name='personal_living_expenses' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="rent_mortgag_payment" class="form-control" style="width: 320px;height: 41px;" name="rent_mortgag_payment" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'>Utilities and other bills</div>
+                  <td class="lbl">
+                    <div class="lbl">Personal and living expenses</div>
                   </td>
-                  <td class='inp'>
-                    <input id='utilities_other_bills' class='form-control' style='width: 320px;' name='utilities_other_bills' type='text' placeholder='Value (CAD)'> 
-                  </td>
-                </tr>
-                <tr>
-                  <td class='lbl'>
-                    <div class='lbl'>Outstanding Amounts</div>
-                    <div class='desc'>Borrowed from others</div>
-                  </td>
-                  <td class='inp'>
-                    <input id='outstanding_amounts' class='form-control' style='width: 320px;' name='outstanding_amounts' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="personal_living_expenses" class="form-control" style="width: 320px;height: 41px;" name="personal_living_expenses" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'>Anything else</div>
+                  <td class="lbl">
+                    <div class="lbl">Utilities and other bills</div>
                   </td>
-                  <td class='inp'>
-                    <input id='l_anything_else' class='form-control' style='width: 320px;' name='l_anything_else' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="utilities_other_bills" class="form-control" style="width: 320px;height: 41px;" name="utilities_other_bills" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'>Total</div>
+                  <td class="lbl">
+                    <div class="lbl">Outstanding Amounts</div>
+                    <div class="desc">Borrowed from others</div>
                   </td>
-                  <td class='inp'>
-                    <input id='liabilities_total' style='width: 320px;' name='liabilities_total' class='readonly' readonly='readonly' type='text' placeholder='Value (CAD)'> 
+                  <td class="inp">
+                    <input id="outstanding_amounts" class="form-control" style="width: 320px;height: 41px;" name="outstanding_amounts" type="text" placeholder="Value (CAD)"> 
                   </td>
                 </tr>
-              </table>
+                <tr>
+                  <td class="lbl">
+                    <div class="lbl">Anything else</div>
+                  </td>
+                  <td class="inp">
+                    <input id="l_anything_else" class="form-control" style="width: 320px;height: 41px;" name="l_anything_else" type="text" placeholder="Value (CAD)"> 
+                  </td>
+                </tr>
+                <tr>
+                  <td class="lbl">
+                    <div class="lbl">Total</div>
+                  </td>
+                  <td class="inp">
+                    <input id="liabilities_total" style="width: 320px;height: 41px;" name="liabilities_total" class="readonly" readonly="readonly" type="text" placeholder="Value (CAD)"> 
+                  </td>
+                </tr>
+              </tbody></table>
             </div>
 
-            <hr />
+            <hr>
             <h3>Zakat</h3>
-            <div id='calculator-zakat' class='calculator-group'>
-              <table border=0 cellpadding=5 cellspacing=0>
-                <tr>
-                  <td class='lbl'>
-                    <div class='lbl'>Net Zakatable Assets</div>
+            <div id="calculator-zakat" class="calculator-group">
+              <table border="0" cellpadding="5" cellspacing="0">
+                <tbody><tr>
+                  <td class="lbl">
+                    <div class="lbl">Net Zakatable Assets</div>
                   </td>
-                  <td class='inp'>
-                    $ <input id='net_zakatable_assets' class='readonly' readonly='readonly' style='width: 320px;' name='net_zakatable_assets' type='text' placeholder='Value (CAD)'> CAD
-                  </td>
-                </tr>
-                <tr>
-                  <td class='lbl'>
-                    <div class='lbl'>Nisab threshold (612.36 grams of silver)</div>
-                    <div class='desc'>Last updated on April 21, 2020</div>
-                  </td>
-                  <td class='inp'>
-                    $ <input id='nisab_threshold' class='readonly' readonly='readonly' style='width: 320px;' name='nisab_threshold' type='text' placeholder='Value (CAD)'> CAD
+                  <td class="inp">
+                    $ <input id="net_zakatable_assets" class="readonly" readonly="readonly" style="width: 320px;height: 41px;" name="net_zakatable_assets" type="text" placeholder="Value (CAD)"> CAD
                   </td>
                 </tr>
                 <tr>
-                  <td class='lbl'>
-                    <div class='lbl'>Zakat Payment</div>
+                  <td class="lbl">
+                    <div class="lbl">Nisab threshold (612.36 grams of silver)</div>
+                    <div class="desc">Last updated on April 21, 2020</div>
                   </td>
-                  <td class='inp'>
-                    $ <input id='zakat_payment' class='readonly' readonly='readonly' style='width: 320px;' name='zakat_payment' type='text' placeholder='Value (CAD)'> CAD
+                  <td class="inp">
+                    $ <input id="nisab_threshold" class="readonly" readonly="readonly" style="width: 320px;height: 41px;" name="nisab_threshold" type="text" placeholder="Value (CAD)"> CAD
                   </td>
                 </tr>
-              </table>
+                <tr>
+                  <td class="lbl">
+                    <div class="lbl">Zakat Payment</div>
+                  </td>
+                  <td class="inp">
+                    $ <input id="zakat_payment" class="readonly" readonly="readonly" style="width: 320px;height: 41px;" name="zakat_payment" type="text" placeholder="Value (CAD)"> CAD
+                  </td>
+                </tr>
+              </tbody></table>
             </div>
 			
 			<br>
-              <input id='reset' class="btn-buy" type='Reset' value='Reset'>
-              <input id='calculate' class="btn-buy" name='calculate' type='submit' value='Calculate'>
-              <input id='pay-now' class="btn-buy" type='submit' value='Pay Now' onclick="window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PA6WVTQMA8B24&source=url');">
-            </div>
-            </form>
+              <input id="reset" class="btn-buy" type="Reset" value="Reset">
+              <input id="calculate" class="btn-buy" name="calculate" type="submit" value="Calculate">
+              <input id="pay-now" class="btn-buy" type="submit" value="Pay Now" onclick="window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=PA6WVTQMA8B24&amp;source=url');">
+            </form></div>
+            
         </div>
 
-        <script type='text/javascript'>
+        <script type="text/javascript">
           var goldPrice = 76.69;
           var silverPrice = 0.67593;
 
@@ -411,17 +415,13 @@
         </script>
 
               </div>
-            </div>
-          </div>
-        </div>
 		<br>
-		<div class="align-items-center">
-<div class="alert alert-warning" style= "width: 930px;">
+<div class="alert alert-warning" style="width: 898px;">
 	<p>The date Zakāt is due annually is determined by:</p>
 	<p>&nbsp; 1. The date on which Zakātable assets reach the Nisāb (minimum amount) for the 
-	first time, and thereafter Zakāt is payable one Islamic lunar year after that date so long as:</P>
-	<p>&nbsp; &nbsp; a &#41;	total Zakātable assets are of Nisāb value after the year has passed, and</p>
-	<p>&nbsp; &nbsp; b &#41;	some wealth remained throughout the course of the preceding year (i.e. the 
+	first time, and thereafter Zakāt is payable one Islamic lunar year after that date so long as:</p>
+	<p>&nbsp; &nbsp; a )	total Zakātable assets are of Nisāb value after the year has passed, and</p>
+	<p>&nbsp; &nbsp; b )	some wealth remained throughout the course of the preceding year (i.e. the 
 	individual’s wealth did not diminish completely ($0) at any point throughout the course of the year).</p>
 	<p>&nbsp; 2. Thereafter, the Zakāt date remains constant every year provided conditions (a) and (b) are met.</p>
 	<p></p>
@@ -434,6 +434,7 @@
 for the wealthy. The current market price of gold and silver must be used to calculate the Nisāb.</p>
 </div>
 </div>
+
 
     </section>
 
